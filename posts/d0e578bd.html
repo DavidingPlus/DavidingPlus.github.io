@@ -91,14 +91,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
 <li><p>编写完成之后，需要在<code>gjb/samples</code>目录下编写对应的两个源文件，一个是遵守规则的，一个是不遵守规则的，还是以序号命名，如果扫描出来之后遵守规则没有扫到然后不遵守规则的扫到了，那么就算成功</p>
 </li>
 <li><p>编译命令</p>
-<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conan install .. <span class="comment">//只用拉一次</span></span><br><span class="line">cmake -DPACKAGE_VERSION=<span class="number">1.0</span><span class="number">.1</span> -DCMAKE_C_COMPILER=<span class="string">&quot;gcc&quot;</span> -DCMAKE_CXX_COMPILER=<span class="string">&quot;g++&quot;</span> ..</span><br><span class="line">make</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conan install .. //只用拉一次</span><br><span class="line">cmake -DPACKAGE_VERSION=1.0.1 -DCMAKE_C_COMPILER=<span class="string">&quot;gcc&quot;</span> -DCMAKE_CXX_COMPILER=<span class="string">&quot;g++&quot;</span> ..</span><br><span class="line">make</span><br></pre></td></tr></table></div></figure>
 
 <p><code>make</code>完毕之后在<code>build/bin</code>目录下生成可执行文件<code>larkscan</code></p>
 <p>然后我们需要跑程序来检测<code>samples</code>目录下的各个程序</p>
-<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctest -VV</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctest -VV</span><br></pre></td></tr></table></div></figure>
 
 <p>或者我们直接调用可执行程序<code>larkscan</code>来扫描样本目录的程序(我的第一个不行，只能用第二个目前)</p>
-<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 现在我们在build目录</span></span><br><span class="line">./bin/larkscan ../gjb/</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 现在我们在build目录</span><br><span class="line">./bin/larkscan ../gjb/</span><br></pre></td></tr></table></div></figure>
 </li>
 <li><p>我们需要把自己编译的规则拿到<code>llvm</code>工程当中去编译，见第二条，这样生成的新文件就包含了我们写的规则了，然后把生成的<code>clang-tidy</code>在我们的项目中<code>clang-tidy/bin</code>目录下替换掉，然后再把<code>clang-tidy/bin</code>和<code>clang-tidy/lib</code>目录再次拷贝到<code>/opt/LarkStudio5/LarkScanner</code></p>
 </li>
