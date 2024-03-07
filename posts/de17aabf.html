@@ -1,0 +1,679 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) {
+  window.location.href = 'https://support.dmeng.net/upgrade-your-browser.html';
+}</script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/assets/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/assets/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=2.8.0" sizes="180x180"><meta name="description" content="自己3.4 - 3.15的实习工作记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3.4 - 3.15">
+<meta property="og:url" content="https://lzx0626.me/posts/de17aabf.html">
+<meta property="og:site_name" content="lzx0626">
+<meta property="og:description" content="自己3.4 - 3.15的实习工作记录。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/direct/6744797cf27e410cb9f6d45a6d5d622d.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/direct/81c0ae4e9f6d4684bc8d5c28bb60a5ac.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/direct/3e0c2d0988174464a1997154a67d829e.png">
+<meta property="article:published_time" content="2024-03-06T10:00:00.000Z">
+<meta property="article:modified_time" content="2024-03-07T09:10:00.000Z">
+<meta property="article:author" content="DavidingPlus">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/direct/6744797cf27e410cb9f6d45a6d5d622d.png"><title>3.4 - 3.15 | lzx0626</title><link ref="canonical" href="https://lzx0626.me/posts/de17aabf.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: ["bing","baidu"],
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":true},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  back2bottom: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":true},
+  reward: false,
+  fancybox: true,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: true,
+  pjax: {"avoidBanner":true},
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"恭喜亲亲，复制成功咧","copyError":"哎呀，复制失败了"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.1.1"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/algo"><span class="header-nav-menu-item__icon"><i class="fas fa-laptop"></i></span><span class="header-nav-menu-item__text">算法</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="javascript:;" onclick="return false;"><span class="header-nav-menu-item__icon"><i class="fas fa-bars"></i></span><span class="header-nav-menu-item__text">其他</span></a><div class="header-nav-submenu"><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/friends/"><span class="header-nav-submenu-item__icon"><i class="fas fa-users"></i></span><span class="header-nav-submenu-item__text">友链</span></a></div><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/internship/"><span class="header-nav-submenu-item__icon"><i class="fas fa-briefcase"></i></span><span class="header-nav-submenu-item__text">实习</span></a></div></div></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-user"></i></span><span class="header-nav-menu-item__text">关于</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div><div class="music"><div id="music163player">
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=310 height=52 src="//music.163.com/outchain/player?type=2&id=2066671175&auto=0&height=32"></iframe></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">lzx0626的博客</div><div class="header-banner-info__subtitle">学习过程中的感悟和收获</div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">3.4 - 3.15</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-03-06</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-03-07</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">3.1k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">24分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><meta name="referrer" content="no-referrer"/>
+
+<p>自己<code>3.4 - 3.15</code>的实习工作记录。</p>
+<span id="more"></span>
+
+
+        <h1 id="迭代任务"   >
+          <a href="#迭代任务" class="heading-link"><i class="fas fa-link"></i></a><a href="#迭代任务" class="headerlink" title="迭代任务"></a>迭代任务</h1>
+      <ol>
+<li>走查画笔<code>LPen</code>，画刷<code>LBrush</code>、<code>LLinearGradient</code>，菜单<code>LMenu</code>、<code>LMenuItem</code>部分代码</li>
+</ol>
+
+        <h1 id="代码走查问题"   >
+          <a href="#代码走查问题" class="heading-link"><i class="fas fa-link"></i></a><a href="#代码走查问题" class="headerlink" title="代码走查问题"></a>代码走查问题</h1>
+      
+        <h2 id="画笔"   >
+          <a href="#画笔" class="heading-link"><i class="fas fa-link"></i></a><a href="#画笔" class="headerlink" title="画笔"></a>画笔</h2>
+      
+        <h3 id="LPen"   >
+          <a href="#LPen" class="heading-link"><i class="fas fa-link"></i></a><a href="#LPen" class="headerlink" title="LPen"></a>LPen</h3>
+      <ol>
+<li><p><code>JointType</code>线段交点样式，目前是只有一种方式，后续还有更多方式引入吗？</p>
+<ul>
+<li>如果有引入，那么构造函数对应也需要进行改造，构造函数见第<code>2</code>点</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @enum JointType</span></span><br><span class="line"><span class="comment"> * @brief 线段交点样式定义，表示线段相交时，不同的连接方式。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">JointType</span></span><br><span class="line">&#123;</span><br><span class="line">    FlatJoint = <span class="number">0</span>       <span class="comment">///&lt; 直接连接，没有拐点修饰</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>构造函数注释少写<code>@param color</code></p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 构造函数，设置画笔宽度。</span></span><br><span class="line"><span class="comment"> * @param width 画笔宽度</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">explicit</span> <span class="title">LPen</span><span class="params">(<span class="type">int</span> width = <span class="number">1</span>, <span class="type">const</span> LColor &amp;color = LColor())</span> : m_width(width), m_color(color) &#123;</span>&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>拷贝构造函数、<code>width()</code>接口的<code>@brief</code>没有句号</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @brief 拷贝构造函数</span></span><br><span class="line"><span class="comment">* @param other 待拷贝对象</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">LPen</span>(<span class="type">const</span> LPen &amp;other) : <span class="built_in">m_width</span>(other.<span class="built_in">width</span>()), <span class="built_in">m_jointType</span>(other.<span class="built_in">jointType</span>()), <span class="built_in">m_color</span>(other.<span class="built_in">color</span>()) &#123;&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @brief 返回画笔宽度</span></span><br><span class="line"><span class="comment">* @return 画笔宽度</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">width</span><span class="params">()</span> <span class="type">const</span> </span>&#123; <span class="keyword">return</span> m_width; &#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>setColor()</code>接口参数传常量引用更好一点</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置画笔颜色。</span></span><br><span class="line"><span class="comment"> * @param color 画笔颜色</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setColor</span><span class="params">(LColor color)</span> </span>&#123; m_color = color; &#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>m_width</code>注释错误</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 画笔连接样式。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">int</span> m_width = <span class="number">0</span>;</span><br></pre></td></tr></table></div></figure></li>
+</ol>
+
+        <h2 id="画刷"   >
+          <a href="#画刷" class="heading-link"><i class="fas fa-link"></i></a><a href="#画刷" class="headerlink" title="画刷"></a>画刷</h2>
+      
+        <h3 id="LBrush"   >
+          <a href="#LBrush" class="heading-link"><i class="fas fa-link"></i></a><a href="#LBrush" class="headerlink" title="LBrush"></a>LBrush</h3>
+      <ol>
+<li><p>拷贝构造函数可以内联</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">LBrush::<span class="built_in">LBrush</span>(<span class="type">const</span> LBrush &amp;other) :</span><br><span class="line">    <span class="built_in">m_brushType</span>(other.<span class="built_in">type</span>()),</span><br><span class="line">    <span class="built_in">m_color</span>(other.<span class="built_in">color</span>())</span><br><span class="line">&#123;</span><br><span class="line">    m_pGradient = <span class="keyword">new</span> <span class="built_in">LLinearGradient</span>(*(other.<span class="built_in">gradient</span>()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>setBrushType</code>的<code>@param</code>的单词与参数不对应</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置笔刷样式。</span></span><br><span class="line"><span class="comment"> * @param brushTypes 笔刷样式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setBrushType</span><span class="params">(BrushType brushType)</span></span>;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>setGradient</code>的<code>@param</code>与参数不对应</p>
+<ul>
+<li>单词不对应，描述也不对应</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置渐变色属性。</span></span><br><span class="line"><span class="comment"> * @param pGradient 渐变色类指针</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setGradient</span><span class="params">(<span class="type">const</span> LLinearGradient &amp;gradient)</span></span>;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>代码中<code>LLinearGradient</code>结构存放的是指针，内存放在堆区，个人认为完全没有必要</p>
+<ul>
+<li><code>LLinearGradient</code>的成员变量如下，存这些东西哪里需要放在堆区？</li>
+<li>这里更改之后，源文件中关于指针<code>new</code>和<code>delete</code>的东西都需要进行修改</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LLinearGradient</span></span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">        </span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    </span><br><span class="line">    ...</span><br><span class="line">        </span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变起点坐标。</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    LPoint m_start;   </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变终点坐标。</span></span><br><span class="line"><span class="comment">    */</span>                   </span><br><span class="line">    LPoint m_finalStop;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变铺展效果，默认为PadMode。</span></span><br><span class="line"><span class="comment">    */</span>                   </span><br><span class="line">    GradientMode m_mode = PadMode;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变点数组，包含渐变比例参数和颜色,渐变比例参数范围为[0,1]。</span></span><br><span class="line"><span class="comment">    */</span>   </span><br><span class="line">    LVector&lt;LPair&lt;<span class="type">double</span>, LColor&gt;&gt; m_stops;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>setBrushType()</code>接口逻辑混乱，设计不合理</p>
+<ul>
+<li>这个接口设置的初衷就是用户可以调用设置<code>brushType</code>，但是第一行判断如果是渐变，则无法设置，这就很扯淡了</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">LBrush::setBrushType</span><span class="params">(BrushType brushType)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (brushType == LBrush::LinearGradientBrush)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="built_in">LException</span>(<span class="string">&quot;无法通过setBrushType设置渐变色，请使用setGradient&quot;</span>); </span><br><span class="line">    &#125;</span><br><span class="line">    m_brushType = brushType;</span><br><span class="line">    <span class="keyword">if</span> (m_pGradient)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">delete</span> m_pGradient;</span><br><span class="line">        m_pGradient = <span class="literal">nullptr</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+
+<ul>
+<li>按理来说，<code>brushType</code>是能用户任意设置的，需要做判断的是不同<code>brushType</code>的各自接口，比如<code>setColor()</code>，<code>setGradient()</code>，<code>color()</code>，<code>gradient()</code></li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// .h</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @brief 返回笔刷颜色.</span></span><br><span class="line"><span class="comment">* @return 笔刷颜色</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">LColor <span class="title">color</span><span class="params">()</span> <span class="type">const</span> </span>&#123; <span class="keyword">return</span> m_color; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @brief 获得该笔刷的渐变色属性。</span></span><br><span class="line"><span class="comment">* @return 渐变色属性</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">LLinearGradient* <span class="title">gradient</span><span class="params">()</span> <span class="type">const</span> </span>&#123; <span class="keyword">return</span> m_pGradient; &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @brief 设置笔刷颜色。</span></span><br><span class="line"><span class="comment">* @param color 笔刷颜色</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setColor</span><span class="params">(LColor color)</span> </span>&#123; <span class="keyword">this</span>-&gt;m_color = color; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// .cpp</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LBrush::setGradient</span><span class="params">(<span class="type">const</span> LLinearGradient &amp;gradient)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_brushType = LBrush::LinearGradientBrush;</span><br><span class="line">    <span class="keyword">if</span> (m_pGradient)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">delete</span> m_pGradient;</span><br><span class="line">    &#125;</span><br><span class="line">    m_pGradient = <span class="keyword">new</span> <span class="built_in">LLinearGradient</span>(gradient);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure></li>
+</ol>
+
+        <h3 id="LLinearGradient"   >
+          <a href="#LLinearGradient" class="heading-link"><i class="fas fa-link"></i></a><a href="#LLinearGradient" class="headerlink" title="LLinearGradient"></a>LLinearGradient</h3>
+      <ol>
+<li><p>头文件<code>&lt;cmath&gt;</code>的引入错误</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lpoint.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lcolor.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lvector.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lpair.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;cmath&quot;</span></span></span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>enum</code>的格式不正确，少了<code>@enum</code>，<code>&#123;</code>应该提行</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 铺展效果枚举。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">GradientMode</span> &#123;</span><br><span class="line">    PadMode,             <span class="comment">///&lt;默认铺展效果，没有被渐变覆盖的区域填充单一的起始颜色或终止颜色</span></span><br><span class="line">    RepeatMode           <span class="comment">///&lt;渐变在起点与终点的渐变区域外重复</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>代码中有很多应该有空行，但没有空行的格式问题</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lpoint.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lcolor.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lvector.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lpair.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;cmath&quot;</span></span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @class LLinearGradient</span></span><br><span class="line"><span class="comment"> * @brief 渐变色填充类,与LBrush结合使用，以指定线形渐变笔刷。</span></span><br><span class="line"><span class="comment"> * @details 默认初始起点颜色为黑色，终点颜色为白色。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LLinearGradient</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 铺展效果枚举。</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">enum</span> <span class="title class_">GradientMode</span> &#123;</span><br><span class="line">        PadMode,             <span class="comment">///&lt;默认铺展效果，没有被渐变覆盖的区域填充单一的起始颜色或终止颜色</span></span><br><span class="line">        RepeatMode           <span class="comment">///&lt;渐变在起点与终点的渐变区域外重复</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 默认构造函数。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">LLinearGradient</span>();</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变起点坐标。</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    LPoint m_start;   </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变终点坐标。</span></span><br><span class="line"><span class="comment">    */</span>                   </span><br><span class="line">    LPoint m_finalStop;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变铺展效果，默认为PadMode。</span></span><br><span class="line"><span class="comment">    */</span>                   </span><br><span class="line">    GradientMode m_mode = PadMode;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @brief 标识渐变点数组，包含渐变比例参数和颜色,渐变比例参数范围为[0,1]。</span></span><br><span class="line"><span class="comment">    */</span>   </span><br><span class="line">    LVector&lt;LPair&lt;<span class="type">double</span>, LColor&gt;&gt; m_stops;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>代码中有很多内联函数，格式不正确</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置渐变起点位置。</span></span><br><span class="line"><span class="comment"> * @param start 渐变起点坐标</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setStart</span><span class="params">(<span class="type">const</span> LPoint &amp;start)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_start = start;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置渐变终点位置。</span></span><br><span class="line"><span class="comment"> * @param finalStop 渐变终点坐标</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setFinalStop</span><span class="params">(<span class="type">const</span> LPoint &amp;finalStop)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_finalStop = finalStop;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置铺展效果。</span></span><br><span class="line"><span class="comment"> * @param mode 铺展效果</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setMode</span><span class="params">(GradientMode mode)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_mode = mode;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 获取渐变起点。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">LPoint <span class="title">start</span><span class="params">()</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">LPoint</span>(m_start);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 获取渐变终点。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function">LPoint <span class="title">finalStop</span><span class="params">()</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">LPoint</span>(m_finalStop);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 获取铺展效果。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">GradientMode <span class="title">mode</span><span class="params">()</span> <span class="type">const</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">return</span> m_mode; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 获取渐变颜色数组。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">LVector&lt;LPair&lt;<span class="type">double</span>, LColor&gt;&gt; <span class="built_in">stops</span>() <span class="type">const</span> </span><br><span class="line">&#123; </span><br><span class="line">    <span class="keyword">return</span> m_stops; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>头文件中很多函数不能内联</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置渐变起点位置。</span></span><br><span class="line"><span class="comment"> * @param x 渐变起点横坐标</span></span><br><span class="line"><span class="comment"> * @param y 渐变起点纵坐标</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setStart</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_start.<span class="built_in">setX</span>(x);</span><br><span class="line">    m_start.<span class="built_in">setY</span>(y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">    </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置渐变终点位置。</span></span><br><span class="line"><span class="comment"> * @param x 渐变终点横坐标</span></span><br><span class="line"><span class="comment"> * @param y 渐变终点纵坐标</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setFinalStop</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_finalStop.<span class="built_in">setX</span>(x);</span><br><span class="line">    m_finalStop.<span class="built_in">setY</span>(y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 设置渐变颜色数组。</span></span><br><span class="line"><span class="comment"> * @param stops 渐变颜色数组</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setStops</span><span class="params">(<span class="type">const</span> LVector&lt;LPair&lt;<span class="type">double</span>, LColor&gt;&gt; &amp;stops)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_stops = stops;</span><br><span class="line">    <span class="keyword">if</span> (m_stops.<span class="built_in">first</span>().<span class="built_in">key</span>() != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        m_stops.<span class="built_in">insert</span>(<span class="number">0</span>, <span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">0</span>, <span class="built_in">LColor</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (m_stops.<span class="built_in">last</span>().<span class="built_in">key</span>() != <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        m_stops.<span class="built_in">append</span>(<span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">1</span>, <span class="built_in">LColor</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>源文件中有的函数可以内联</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">LLinearGradient::<span class="built_in">LLinearGradient</span>(<span class="type">int</span> x1, <span class="type">int</span> y1, <span class="type">int</span> x2, <span class="type">int</span> y2)</span><br><span class="line">    : <span class="built_in">LLinearGradient</span>(<span class="built_in">LPoint</span>(x1, y1), <span class="built_in">LPoint</span>(x2, y2))</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">LLinearGradient::~<span class="built_in">LLinearGradient</span>()</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>代码中很多<code>LVector</code>的插入可以调用<code>prepend()</code>或者<code>append()</code></p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// .h</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setStops</span><span class="params">(<span class="type">const</span> LVector&lt;LPair&lt;<span class="type">double</span>, LColor&gt;&gt; &amp;stops)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m_stops = stops;</span><br><span class="line">    <span class="keyword">if</span> (m_stops.<span class="built_in">first</span>().<span class="built_in">key</span>() != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        m_stops.<span class="built_in">insert</span>(<span class="number">0</span>, <span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">0</span>, <span class="built_in">LColor</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (m_stops.<span class="built_in">last</span>().<span class="built_in">key</span>() != <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        m_stops.<span class="built_in">append</span>(<span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">1</span>, <span class="built_in">LColor</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">// .cpp</span></span><br><span class="line">LLinearGradient::<span class="built_in">LLinearGradient</span>()</span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">    </span><br><span class="line">    m_stops.<span class="built_in">insert</span>(<span class="number">0</span>, <span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">0</span>, <span class="built_in">LColor</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)));</span><br><span class="line">    m_stops.<span class="built_in">insert</span>(<span class="number">1</span>, <span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">1</span>, <span class="built_in">LColor</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>)));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">LLinearGradient::<span class="built_in">LLinearGradient</span>(<span class="type">const</span> LPoint &amp;start, <span class="type">const</span> LPoint &amp;finalStop)</span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">    </span><br><span class="line">    m_stops.<span class="built_in">insert</span>(<span class="number">0</span>, <span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">0</span>, <span class="built_in">LColor</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)));</span><br><span class="line">    m_stops.<span class="built_in">insert</span>(<span class="number">1</span>, <span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(<span class="number">1</span>, <span class="built_in">LColor</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>)));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>setColor()</code>接口代码冗杂，这下面的部分一行就能搞定</p>
+<ul>
+<li>接口作用：根据输入的渐变比例<code>pos</code>值插入到数组中；我们需要保证标识渐变点数组是按照渐变比例<code>pos</code>递增的，因此可以采用二分的思路，这里查询的是不小于<code>pos</code>的第一个元素下标</li>
+<li>上面的二分思路，另一处代码中也用到了，查询的位置相同，可以进行复用</li>
+<li>注释的<code>&#123;</code>也有问题</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">LLinearGradient::setColor</span><span class="params">(<span class="type">double</span> pos, <span class="type">const</span> LColor &amp;color)</span> </span>&#123;</span><br><span class="line">	... </span><br><span class="line">        </span><br><span class="line">    <span class="comment">// 如果已经存在对应的pos值，则覆盖颜色值</span></span><br><span class="line">    <span class="keyword">if</span> (index &lt; m_stops.<span class="built_in">size</span>() &amp;&amp; m_stops[index].<span class="built_in">key</span>() == pos)</span><br><span class="line">    &#123;</span><br><span class="line">        m_stops[index].<span class="built_in">value</span>() = color;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        m_stops.<span class="built_in">insert</span>(index, <span class="built_in">LPair</span>&lt;<span class="type">double</span>, LColor&gt;(pos, color));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>getColor()</code>接口，分了三种情况，经过数学推导，一个公式就能搞定</p>
+<ul>
+<li><p>推导过程</p>
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://img-blog.csdnimg.cn/direct/6744797cf27e410cb9f6d45a6d5d622d.png"  alt="96267918b6de05e058c90fee24804e4" style="zoom:30%;" />
+      
+</li>
+<li><p>接口作用：根据输入点的坐标得出该点的颜色，本函数只负责将坐标转化为渐变比例<code>pos</code>（原始值），<code>pos</code>的处理和计算颜色的具体逻辑交给<code>getColorByPadMode()</code>和<code>getColorByRepeatMode()</code></p>
+</li>
+<li><p>计算出<code>pos</code>之后，分铺展情况调用不同接口一行也能搞定</p>
+</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">LColor <span class="title">LLinearGradient::getColor</span><span class="params">(<span class="type">const</span> LPoint &amp;point)</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (m_stops.<span class="built_in">size</span>() &lt; <span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="built_in">LException</span>(<span class="string">&quot;尚未完整初始化颜色：至少提供两种颜色&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 垂直渐变</span></span><br><span class="line">    <span class="keyword">if</span> (m_start.<span class="built_in">x</span>() == m_finalStop.<span class="built_in">x</span>() &amp;&amp; m_start.<span class="built_in">y</span>() != m_finalStop.<span class="built_in">y</span>())</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 竖向渐变</span></span><br><span class="line">        <span class="type">double</span> pos = (point.<span class="built_in">y</span>() - m_start.<span class="built_in">y</span>()) / <span class="built_in">static_cast</span>&lt;<span class="type">double</span>&gt;(m_finalStop.<span class="built_in">y</span>() - m_start.<span class="built_in">y</span>());</span><br><span class="line">        <span class="keyword">if</span> (m_mode == PadMode)  <span class="comment">// PadMode铺展</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">getColorByPadMode</span>(pos);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>  <span class="comment">// RepeatMode铺展</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">getColorByRepeatMode</span>(pos);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (m_start.<span class="built_in">y</span>() == m_finalStop.<span class="built_in">y</span>() &amp;&amp; m_start.<span class="built_in">x</span>() != m_finalStop.<span class="built_in">x</span>())</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 横向渐变</span></span><br><span class="line">        <span class="type">double</span> pos = (point.<span class="built_in">x</span>() - m_start.<span class="built_in">x</span>()) / <span class="built_in">static_cast</span>&lt;<span class="type">double</span>&gt;(m_finalStop.<span class="built_in">x</span>() - m_start.<span class="built_in">x</span>());</span><br><span class="line">        <span class="keyword">if</span> (m_mode == PadMode)  <span class="comment">// PadMode铺展</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">getColorByPadMode</span>(pos);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>  <span class="comment">// RepeatMode铺展</span></span><br><span class="line">        &#123;   </span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">getColorByRepeatMode</span>(pos);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 非垂直渐变</span></span><br><span class="line">    <span class="comment">// c为起点与终点之间的距离</span></span><br><span class="line">    <span class="type">double</span> c = <span class="built_in">sqrt</span>(std::<span class="built_in">pow</span>((m_start.<span class="built_in">x</span>() - m_finalStop.<span class="built_in">x</span>()),<span class="number">2</span>) + std::<span class="built_in">pow</span>((m_start.<span class="built_in">y</span>() - m_finalStop.<span class="built_in">y</span>()),<span class="number">2</span>));</span><br><span class="line">    <span class="comment">// 通过坐标旋转将非垂直渐变转变为垂直渐变</span></span><br><span class="line">    <span class="type">double</span> revolve_x = ((point.<span class="built_in">x</span>() - m_start.<span class="built_in">x</span>()) * (m_finalStop.<span class="built_in">x</span>() - m_start.<span class="built_in">x</span>()) / c) - </span><br><span class="line">                       ((point.<span class="built_in">y</span>() - m_start.<span class="built_in">y</span>()) * (-(m_finalStop.<span class="built_in">y</span>() - m_start.<span class="built_in">y</span>())) / c);</span><br><span class="line">    <span class="type">double</span> pos = revolve_x / c;</span><br><span class="line">    <span class="keyword">if</span> (m_mode == PadMode)  <span class="comment">// PadMode铺展</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">getColorByPadMode</span>(pos);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>  <span class="comment">// RepeatMode铺展</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">getColorByRepeatMode</span>(pos);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>getColorByT()</code>接口代码冗杂，同上</p>
+</li>
+</ol>
+<ul>
+<li>接口作用：这个函数才是根据真正输入的渐变比例<code>pos</code>值，找到其在升序数组中的位置，有人为设置则直接返回；没有则根据左右计算，具体逻辑在<code>computeColorByT()</code></li>
+</ul>
+   <figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">LColor <span class="title">LLinearGradient::getColorByT</span><span class="params">(<span class="type">double</span> t)</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 如果渐变比例t刚好在m_stops中有对应值，则返回对应的颜色参数</span></span><br><span class="line">    <span class="keyword">if</span> (m_stops[right].<span class="built_in">key</span>() == t)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> m_stops[right].<span class="built_in">value</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 计算新的渐变比例值</span></span><br><span class="line">    <span class="type">double</span> target = (t - m_stops[left].<span class="built_in">key</span>()) / (m_stops[right].<span class="built_in">key</span>() - m_stops[left].<span class="built_in">key</span>());</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">computeColorByT</span>(m_stops[left].<span class="built_in">value</span>(), m_stops[right].<span class="built_in">value</span>(), target);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+
+<ol start="11">
+<li><p><code>getColorByPadMode()</code>接口代码冗杂，同上</p>
+<ul>
+<li>接口作用：这个接口和下面那个的区别在于，一个是<code>PadMode</code>，一个是<code>RepeatMode</code>，前者在超出区域使用边界值，后者在把超出区域视作另一个区域，进行重复</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">LColor <span class="title">LLinearGradient::getColorByPadMode</span><span class="params">(<span class="type">double</span> t)</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (t &lt;= <span class="number">1</span> &amp;&amp; t &gt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">getColorByT</span>(t);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (t &lt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">LColor</span>(m_stops.<span class="built_in">first</span>().<span class="built_in">value</span>());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">LColor</span>(m_stops.<span class="built_in">last</span>().<span class="built_in">value</span>());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>getColorByRepeatMode()</code>接口代码冗杂，同上</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">LColor <span class="title">LLinearGradient::getColorByRepeatMode</span><span class="params">(<span class="type">double</span> t)</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">double</span> pos;</span><br><span class="line">    <span class="keyword">if</span> (t &lt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pos = <span class="number">1</span> - <span class="built_in">fabs</span>(<span class="built_in">fmod</span>(t, <span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        pos = <span class="built_in">fabs</span>(<span class="built_in">fmod</span>(t, <span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">getColorByT</span>(pos);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p><code>computeColorByT()</code>接口代码冗杂，同上</p>
+<ul>
+<li>接口作用：这个接口是在确定<code>pos</code>落在哪两个设置的颜色之间，根据新计算出的<code>pos</code>值得出最终的颜色</li>
+</ul>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">LColor <span class="title">LLinearGradient::computeColorByT</span><span class="params">(<span class="type">const</span> LColor &amp;startColor, <span class="type">const</span> LColor &amp;finalStopColor, <span class="type">double</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> r = (<span class="number">1</span> - t) * startColor.<span class="built_in">red</span>() + t * finalStopColor.<span class="built_in">red</span>();</span><br><span class="line">    <span class="type">int</span> g = (<span class="number">1</span> - t) * startColor.<span class="built_in">green</span>() + t * finalStopColor.<span class="built_in">green</span>();</span><br><span class="line">    <span class="type">int</span> b = (<span class="number">1</span> - t) * startColor.<span class="built_in">blue</span>() + t * finalStopColor.<span class="built_in">blue</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">LColor</span>(r, g, b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure></li>
+</ol>
+
+        <h2 id="菜单"   >
+          <a href="#菜单" class="heading-link"><i class="fas fa-link"></i></a><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2>
+      
+        <h3 id="LMenu"   >
+          <a href="#LMenu" class="heading-link"><i class="fas fa-link"></i></a><a href="#LMenu" class="headerlink" title="LMenu"></a>LMenu</h3>
+      
+        <h3 id="LMenuItem"   >
+          <a href="#LMenuItem" class="heading-link"><i class="fas fa-link"></i></a><a href="#LMenuItem" class="headerlink" title="LMenuItem"></a>LMenuItem</h3>
+      
+        <h1 id="学习的点"   >
+          <a href="#学习的点" class="heading-link"><i class="fas fa-link"></i></a><a href="#学习的点" class="headerlink" title="学习的点"></a>学习的点</h1>
+      
+        <h2 id="画笔-1"   >
+          <a href="#画笔-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#画笔-1" class="headerlink" title="画笔"></a>画笔</h2>
+      
+        <h3 id="LPen-1"   >
+          <a href="#LPen-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#LPen-1" class="headerlink" title="LPen"></a>LPen</h3>
+      <p>我以为这个类是拿来做画笔的相关绘制的，但其实设计并非我想的这样。这个类<code>LPen</code>只是一个数据存储类，保存了画笔需要的一些信息，例如画笔宽度、画笔连接样式、画笔颜色等，真正管理绘画的类是绘画引擎类，对于<code>LPen</code>是<code>LDrawEngine</code>以及其下面的工具类，这些类里面保存了<code>LPen</code>对象，并且针对不同的绘画做了不同的处理，包括下面的画刷<code>LBrush</code>也是一样的道理</p>
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://img-blog.csdnimg.cn/direct/81c0ae4e9f6d4684bc8d5c28bb60a5ac.png"  alt="image-20240306104337531" style="zoom:85%;" />
+      
+
+
+        <h2 id="画刷-1"   >
+          <a href="#画刷-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#画刷-1" class="headerlink" title="画刷"></a>画刷</h2>
+      
+        <h3 id="LBrush-1"   >
+          <a href="#LBrush-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#LBrush-1" class="headerlink" title="LBrush"></a>LBrush</h3>
+      
+        <h3 id="LLinearGradient-1"   >
+          <a href="#LLinearGradient-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#LLinearGradient-1" class="headerlink" title="LLinearGradient"></a>LLinearGradient</h3>
+      <ol>
+<li><p>大致设计思路：</p>
+<ul>
+<li><p>这个类与<code>LBrush</code>类一起使用，以指定线形渐变笔刷，在类当中存储了渐变点起始坐标、结束坐标和标识的渐变点数组</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 标识渐变起点坐标。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">LPoint m_start;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief 标识渐变终点坐标。</span></span><br><span class="line"><span class="comment">*/</span>                   </span><br><span class="line">LPoint m_finalStop;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @brief 标识渐变点数组，包含渐变比例参数和颜色,渐变比例参数范围为[0,1]。</span></span><br><span class="line"><span class="comment">*/</span>   </span><br><span class="line">LVector&lt;LPair&lt;<span class="type">double</span>, LColor&gt;&gt; m_stops;</span><br></pre></td></tr></table></div></figure>
+
+<ul>
+<li>第一个参数是渐变比例参数，范围是<code>0~1</code>，如何理解？</li>
+<li>首先理解如何渐变，从起始点开始到结束点，连起来是一条线段，我们的<code>LBrush</code>是沿着这条线段进行颜色渐变，垂直线段的颜色是一样的；</li>
+<li>这个比例参数就是在线段上的比例对应位置想要设置的颜色，比如设置一个这个参数之后，左右的线段的渐变就被分为了两个区域，例如从黑到白变成黑到红到白，这两种的视觉效果是不一样的</li>
+</ul>
+</li>
+<li><p>更多接口的作用见上面，基本每个接口都或多或少存在问题，就写在上面了</p>
+</li>
+<li><p>可以通过一个测试程序看看效果</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;llineargradient.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lpair.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lvector.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ldrawwindow.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ldrawcontext.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;lwindowapplication.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">const</span> <span class="type">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    LWindowApplication app;</span><br><span class="line">    LDrawWindow dw;</span><br><span class="line">    LDrawContext *dc = dw.<span class="built_in">drawContext</span>();</span><br><span class="line"></span><br><span class="line">    <span class="function">LLinearGradient <span class="title">line</span><span class="params">(LPoint(<span class="number">100</span>, <span class="number">0</span>), LPoint(<span class="number">300</span>, <span class="number">0</span>))</span></span>; <span class="comment">// 渐变从(100,0)到(300,0)</span></span><br><span class="line">    dc-&gt;<span class="built_in">setBrushGradient</span>(line);</span><br><span class="line">    dc-&gt;<span class="built_in">drawRect</span>(<span class="built_in">LRect</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">400</span>, <span class="number">400</span>));<span class="comment">// 画一个矩形</span></span><br><span class="line"></span><br><span class="line">    dw.<span class="built_in">show</span>();</span><br><span class="line">    app.<span class="built_in">exec</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+
+<p>执行下来大概就是这个结果</p>
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://img-blog.csdnimg.cn/direct/3e0c2d0988174464a1997154a67d829e.png"  alt="image-20240307145534071" style="zoom:67%;" />
+      </li>
+</ul>
+</li>
+</ol>
+
+        <h2 id="菜单-1"   >
+          <a href="#菜单-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#菜单-1" class="headerlink" title="菜单"></a>菜单</h2>
+      
+        <h3 id="LMenu-1"   >
+          <a href="#LMenu-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#LMenu-1" class="headerlink" title="LMenu"></a>LMenu</h3>
+      
+        <h3 id="LMenuItem-1"   >
+          <a href="#LMenuItem-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#LMenuItem-1" class="headerlink" title="LMenuItem"></a>LMenuItem</h3>
+      </div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://lzx0626.me">DavidingPlus</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://lzx0626.me/posts/de17aabf.html">https://lzx0626.me/posts/de17aabf.html</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/posts/53b96cfe.html"><span class="paginator-prev__text">标准库string的SSO优化对LVector插入影响的探究</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.</span> <span class="toc-text">
+          迭代任务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E8%B5%B0%E6%9F%A5%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">
+          代码走查问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%BB%E7%AC%94"><span class="toc-number">2.1.</span> <span class="toc-text">
+          画笔</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#LPen"><span class="toc-number">2.1.1.</span> <span class="toc-text">
+          LPen</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%BB%E5%88%B7"><span class="toc-number">2.2.</span> <span class="toc-text">
+          画刷</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#LBrush"><span class="toc-number">2.2.1.</span> <span class="toc-text">
+          LBrush</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LLinearGradient"><span class="toc-number">2.2.2.</span> <span class="toc-text">
+          LLinearGradient</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8F%9C%E5%8D%95"><span class="toc-number">2.3.</span> <span class="toc-text">
+          菜单</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#LMenu"><span class="toc-number">2.3.1.</span> <span class="toc-text">
+          LMenu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LMenuItem"><span class="toc-number">2.3.2.</span> <span class="toc-text">
+          LMenuItem</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%82%B9"><span class="toc-number">3.</span> <span class="toc-text">
+          学习的点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%BB%E7%AC%94-1"><span class="toc-number">3.1.</span> <span class="toc-text">
+          画笔</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#LPen-1"><span class="toc-number">3.1.1.</span> <span class="toc-text">
+          LPen</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%BB%E5%88%B7-1"><span class="toc-number">3.2.</span> <span class="toc-text">
+          画刷</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#LBrush-1"><span class="toc-number">3.2.1.</span> <span class="toc-text">
+          LBrush</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LLinearGradient-1"><span class="toc-number">3.2.2.</span> <span class="toc-text">
+          LLinearGradient</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8F%9C%E5%8D%95-1"><span class="toc-number">3.3.</span> <span class="toc-text">
+          菜单</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#LMenu-1"><span class="toc-number">3.3.1.</span> <span class="toc-text">
+          LMenu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LMenuItem-1"><span class="toc-number">3.3.2.</span> <span class="toc-text">
+          LMenuItem</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/assets/android-chrome-512x512.png" alt="avatar"></div><p class="sidebar-ov-author__text">想找个好工作.</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://blog.csdn.net/m0_61588837?spm=1000.2115.3001.5343" target="_blank" rel="noopener" data-popover="CSDN" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CSDN</span></a><a class="sidebar-ov-social-item" href="https://github.com/DavidingPlus" target="_blank" rel="noopener" data-popover="GitHub" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="/images/social/qq.jpg" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a><a class="sidebar-ov-social-item" href="/images/social/wechat.jpg" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="mailto:2065666169@qq.com" target="_blank" rel="noopener" data-popover="E-Mail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fas fa-envelope"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">34</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">24</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">您已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2024</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>DavidingPlus</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span><script>var now = new Date();
+function createtime() {
+var grt= new Date("09/18/2023 00:00:00");
+now.setTime(now.getTime()+250);
+days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+document.getElementById("timeDate").innerHTML = "小破站已经安全运行 "+dnum+" 天 ";
+document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒啦!!!";
+}
+setInterval("createtime()",250);
+</script></div><div>Nothing is true, everything is permitted.</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-thumbs-up"></i></span></div><div class="back2bottom" id="back2bottom"><span class="back2bottom__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"><div class="search-btns">使用搜索：<span class="search-btns-item search-btns-item--bing"><i></i>必应</span><span class="search-btns-item search-btns-item--baidu"><i></i>百度</span></div></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="255,255,255" opacity="1" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script>function initSearch() {
+  var isXML = true;
+  var search_path = 'search.json';
+
+  if (!search_path) {
+    search_path = 'search.xml';
+  } else if (/json$/i.test(search_path)) {
+    isXML = false;
+  }
+
+  var path = '/' + search_path;
+  $.ajax({
+    url: path,
+    dataType: isXML ? 'xml' : 'json',
+    async: true,
+    success: function (res) {
+      var datas = isXML ? $('entry', res).map(function () {
+        // 将 XML 转为 JSON
+        return {
+          title: $('title', this).text(),
+          content: $('content', this).text(),
+          url: $('url', this).text()
+        };
+      }).get() : res;
+      var $input = $('.search-input input');
+      var $result = $('.search-results');
+      // 搜索对象（标题、内容）的权重，影响显示顺序
+      var WEIGHT = { title: 100, content: 1 };
+      var searchPost = function () {
+        var searchText = $input.val().toLowerCase().trim();
+        // 根据空白字符分隔关键字
+        var keywords = searchText.split(/[\s]+/);
+        // 搜索结果
+        var matchPosts = [];
+
+        // 有多个关键字时，将原文字整个保存下来
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        // 防止未输入字符时搜索
+        if (searchText.length > 0) {
+          datas.forEach(function (data) {
+            var isMatch  = false;
+            // 没有标题的文章使用预设的 i18n 变量代替
+            var title = (data.title && data.title.trim()) || '[ 文章无标题 ]';
+            var titleLower = title && title.toLowerCase();
+            // 删除 HTML 标签 和 所有空白字符
+            var content = data.content && data.content.replace(/<[^>]+>/g, '');
+            var contentLower = content && content.toLowerCase();
+            // 删除重复的 /
+            var postURL = data.url && decodeURI(data.url).replace(/\/{2,}/g, '/');
+            // 标题中匹配到的关键词
+            var titleHitSlice = [];
+            // 内容中匹配到的关键词
+            var contentHitSlice = [];
+
+            keywords.forEach(function (keyword) {
+              /**
+              * 获取匹配的关键词的索引
+              * @param {String} keyword 要匹配的关键字
+              * @param {String} text 原文字
+              * @param {Boolean} caseSensitive 是否区分大小写
+              * @param {Number} weight 匹配对象的权重。权重大的优先显示
+              * @return {Array}
+              */
+              function getIndexByword (word, text, caseSensitive, weight) {
+                if (!word || !text) {
+                  return [];
+                };
+
+                var startIndex = 0; // 每次匹配的开始索引
+                var index = -1;     // 匹配到的索引值
+                var result = [];    // 匹配结果
+
+                if (!caseSensitive) {
+                  word = word.toLowerCase();
+                  text = text.toLowerCase();
+                }
+
+                while((index = text.indexOf(word, startIndex)) !== -1) {
+                  var hasMatch = false;
+                  // 索引位置相同的关键词，保留长度较长的
+                  titleHitSlice.forEach(function (hit) {
+                    if (hit.index === index && hit.word.length < word.length) {
+                      hit.word = word;
+                      hasMatch = true;
+                    }
+                  });
+                  startIndex = index + word.length;
+                  !hasMatch && result.push({ index: index, word: word, weight: weight });
+                }
+                return result;
+              }
+              titleHitSlice = titleHitSlice.concat(getIndexByword(keyword, titleLower, false, WEIGHT.title));
+              contentHitSlice = contentHitSlice.concat(getIndexByword(keyword, contentLower, false, WEIGHT.content));
+            });
+
+            var hitTitle = titleHitSlice.length;
+            var hitContent = contentHitSlice.length;
+
+            if (hitTitle > 0 || hitContent > 0) {
+              isMatch = true;
+            }
+            if (isMatch) {
+              ;[titleHitSlice, contentHitSlice].forEach(function (hit) {
+                // 按照匹配文字的索引的递增顺序排序
+                hit.sort(function (left, right) {
+                  return left.index - right.index;
+                });
+              });
+              /**
+              * 给文本中匹配到的关键词添加标记，从而进行高亮显示
+              * @param {String} text 原文本
+              * @param {Array} hitSlice 匹配项的索引信息
+              * @param {Number} start 开始索引
+              * @param {Number} end 结束索引
+              * @return {String}
+              */
+              function highlightKeyword (text, hitSlice, start, end) {
+                if (!text || !hitSlice || !hitSlice.length) {
+                  return;
+                }
+
+                var result = '';
+                var startIndex = start;
+                var endIndex = end;
+                hitSlice.forEach(function (hit) {
+                  if (hit.index < startIndex) {
+                    return;
+                  }
+
+                  var hitWordEnd = hit.index + hit.word.length;
+                  result += text.slice(startIndex, hit.index);
+                  result += '<b>' + text.slice(hit.index, hitWordEnd) + '</b>';
+                  startIndex = hitWordEnd;
+                });
+                result += text.slice(startIndex, endIndex);
+                return result;
+              }
+
+              var postData = {};
+              // 文章总的搜索权重
+              var postWeight = titleHitSlice.length * WEIGHT.title + contentHitSlice.length * WEIGHT.content;
+              // 标记匹配关键词后的标题
+              var postTitle = highlightKeyword(title, titleHitSlice, 0, title.length) || title;
+              // 标记匹配关键词后的内容
+              var postContent;
+              // 显示内容的长度
+              var SHOW_WORD_LENGTH = 200;
+              // 命中关键词前的字符显示长度
+              var SHOW_WORD_FRONT_LENGTH = 20;
+              var SHOW_WORD_END_LENGTH = SHOW_WORD_LENGTH - SHOW_WORD_FRONT_LENGTH;
+
+              // 截取匹配的第一个字符，前后共 200 个字符来显示
+              if (contentHitSlice.length > 0) {
+                var firstIndex = contentHitSlice[0].index;
+                var start = firstIndex > SHOW_WORD_FRONT_LENGTH ? firstIndex - SHOW_WORD_FRONT_LENGTH : 0;
+                var end = firstIndex + SHOW_WORD_END_LENGTH;
+                postContent = highlightKeyword(content, contentHitSlice, start, end);
+              } else { // 未匹配到内容，直接截取前 200 个字符来显示
+                postContent = content.slice(0, SHOW_WORD_LENGTH);
+              }
+              postData.title = postTitle;
+              postData.content = postContent;
+              postData.url = postURL;
+              postData.weight = postWeight;
+              matchPosts.push(postData);
+            }
+          });
+        }
+
+        var resultInnerHtml = '';
+        if (matchPosts.length) {
+          // 按权重递增的顺序排序，使权重大的优先显示
+          matchPosts.sort(function (left, right) {
+            return right.weight - left.weight;
+          });
+          resultInnerHtml += '<ul>';
+          matchPosts.forEach(function (post) {
+            resultInnerHtml += '<li><a class="search-results-title" href="' + post.url + '">';
+            resultInnerHtml += post.title;
+            resultInnerHtml += '</a><div class="search-results-content">';
+            resultInnerHtml += post.content;
+            resultInnerHtml += '</div></li>';
+          });
+          resultInnerHtml += '</ul>';
+        } else {
+          resultInnerHtml += '<div class="search-results-none"><i class="far fa-meh"></i></div>';
+        }
+        $result.html(resultInnerHtml);
+      };
+      $input.on('input', searchPost);
+      $input.on('keyup', function (e) {
+        if (e.keyCode === Stun.utils.codeToKeyCode('Enter')) {
+          searchPost();
+        }
+      });
+    }
+  });
+}
+
+function closeSearch () {
+  $('body').css({ overflow: 'auto' });
+  $('.search-popup').css({ display: 'none' });
+  $('.search-mask').css({ display: 'none' });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  Stun.utils.pjaxReloadLocalSearch = function () {
+    $('.header-nav-search').on('click', function (e) {
+      e.stopPropagation();
+      $('body').css('overflow', 'hidden');
+      $('.search-popup')
+        .velocity('stop')
+        .velocity('transition.expandIn', {
+          duration: 300,
+          complete: function () {
+            $('.search-popup input').focus();
+          }
+        });
+      $('.search-mask')
+        .velocity('stop')
+        .velocity('transition.fadeIn', {
+          duration: 300
+        });
+
+      initSearch();
+    });
+    $('.search-mask, .search-close').on('click', function () {
+      closeSearch();
+    });
+    $(document).on('keydown', function (e) {
+      // Escape <=> 27
+      if (e.keyCode === Stun.utils.codeToKeyCode('Escape')) {
+        closeSearch();
+      }
+    });
+  };
+
+  Stun.utils.pjaxReloadLocalSearch();
+}, false);
+
+function safeOpenUrl(url) {
+  var newTab = window.open();
+  newTab.opener = null;
+  newTab.location = url;
+}
+
+function extSearch(engine) {
+  var engines = {
+    google: 'https://www.google.com/search?q=',
+    bing: 'https://cn.bing.com/search?q=',
+    baidu: 'https://www.baidu.com/s?ie=UTF-8&wd=',
+  };
+  var host = window.location.host;
+  var query = $('.search-input input').val().toLowerCase().trim();
+  var uri = engines[engine] + query + ' site:' + host;
+
+  if (query) {
+    safeOpenUrl(uri);
+  } else {
+    Stun.utils.popAlert('warning', '请输入字符');
+  }
+}
+
+var assistSearchList = window.CONFIG.assistSearch;
+
+if (Array.isArray(assistSearchList)) {
+  assistSearchList.forEach(function (name) {
+    document.querySelector('.search-btns-item--' + name).addEventListener('click', function () {
+      extSearch(name);
+    }, false);
+  });
+}</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
+  var pjax = new Pjax({"selectors":["head title","#main",".pjax-reload",".header-banner"],"history":true,"scrollTo":false,"scrollRestoration":false,"cacheBust":false,"debug":false,"currentUrlFullReload":false,"timeout":0});
+  // 加载进度条的计时器
+  var loadingTimer = null;
+
+  // 重置页面 Y 方向上的滚动偏移量
+  document.addEventListener('pjax:send', function () {
+    $('.header-nav-menu').removeClass('show');
+    if (CONFIG.pjax && CONFIG.pjax.avoidBanner) {
+      $('html').velocity('scroll', {
+        duration: 500,
+        offset: $('#header').height(),
+        easing: 'easeInOutCubic'
+      });
+    }
+
+    var loadingBarWidth = 20;
+    var MAX_LOADING_WIDTH = 95;
+
+    $('.loading-bar').addClass('loading');
+    $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    clearInterval(loadingTimer);
+    loadingTimer = setInterval(function () {
+      loadingBarWidth += 3;
+      if (loadingBarWidth > MAX_LOADING_WIDTH) {
+        loadingBarWidth = MAX_LOADING_WIDTH;
+      }
+      $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    }, 500);
+  }, false);
+
+  window.addEventListener('pjax:complete', function () {
+    clearInterval(loadingTimer);
+    $('.loading-bar__progress').css('width', '100%');
+    $('.loading-bar').removeClass('loading');
+    setTimeout(function () {
+      $('.loading-bar__progress').css('width', '0');
+    }, 400);
+    $('link[rel=prefetch], script[data-pjax-rm]').each(function () {
+      $(this).remove();
+    });
+    $('script[data-pjax], #pjax-reload script').each(function () {
+      $(this).parent().append($(this).remove());
+    });
+
+    if (Stun.utils.pjaxReloadBoot) {
+      Stun.utils.pjaxReloadBoot();
+    }
+    if (Stun.utils.pjaxReloadScroll) {
+      Stun.utils.pjaxReloadScroll();
+    }
+    if (Stun.utils.pjaxReloadSidebar) {
+      Stun.utils.pjaxReloadSidebar();
+    }
+    if (false) {
+      if (Stun.utils.pjaxReloadHeader) {
+        Stun.utils.pjaxReloadHeader();
+      }
+      if (Stun.utils.pjaxReloadScrollIcon) {
+        Stun.utils.pjaxReloadScrollIcon();
+      }
+      if (Stun.utils.pjaxReloadLocalSearch) {
+        Stun.utils.pjaxReloadLocalSearch();
+      }
+    }
+  }, false);
+}, false);</script><div id="pjax-reload"><script src="https://cdn.jsdelivr.net/npm/quicklink@1.0.1/dist/quicklink.umd.js"></script><script>function initQuicklink() {
+  quicklink({
+    timeout: '10000',
+    priority: true,
+    ignores: [uri => uri.includes('#'), uri => uri === 'https://lzx0626.me/posts/de17aabf.html', /\/api\/?/,uri => uri.includes('.xml'),uri => uri.includes('.zip'),(uri, el) => el.hasAttribute('nofollow'),(uri, el) => el.hasAttribute('noprefetch')]
+  });
+}
+
+if (true || false) {
+  initQuicklink();
+} else {
+  window.addEventListener('DOMContentLoaded', initQuicklink, false);
+}</script><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script></div><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js" data-pjax=""></script><script src="https://cdn.jsdelivr.net/npm/js-md5@latest/src/md5.min.js" data-pjax=""></script><script data-pjax="">function loadGitalk () {
+  if (!document.getElementById('gitalk-container')) {
+    return;
+  }
+
+  var gitalk = new Gitalk({
+    id: md5(window.location.pathname.slice(1)),
+    clientID: '275382d4e047906af49b',
+    clientSecret: 'b9f1b3c5bbb3f352d4ae3fabdb95c6927bc7ffbb',
+    repo: 'Gitalk',
+    owner: 'DavidingPlus',
+    admin: ['DavidingPlus'],
+    distractionFreeMode: 'true',
+    language: 'zh-CN'
+  });
+  gitalk.render('gitalk-container');
+}
+
+if (true) {
+  loadGitalk();
+} else {
+  window.addEventListener('DOMContentLoaded', loadGitalk, false);
+}</script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script><script type="application/json" src="/search.json"></script><script async src="/js/cursor/text.js"></script><script src="/js/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script>var OriginTitile = document.title;
+var titleTime;
+document.addEventListener("visibilitychange", function() {
+  if (document.hidden) {
+    document.title = "🤡快回来,粗大事了~~" + OriginTitile;
+    clearTimeout(titleTime);
+  } else {
+    document.title = "😚欢迎回来!~" + OriginTitile;
+    titleTime = setTimeout(function() {
+      document.title = OriginTitile;
+    }, 2000);
+  }
+});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":160,"height":290},"mobile":{"show":true},"log":false});</script></body></html>
